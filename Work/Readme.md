@@ -6,11 +6,17 @@ The directories should be:
 Copy the files extract_data.ipynb and LAN_v3.ipynb in this folder.
 
 In that two directories get created after running extract_data.ipynb (you can create yourself if you prefer):
+
 > 'My Drive/Colab Notebooks/Work/Amazon reviews/'
+
 >> 'My Drive/Colab Notebooks/Work/Amazon reviews/train'
+
 >> 'My Drive/Colab Notebooks/Work/Amazon reviews/dev'
+
 >> 'My Drive/Colab Notebooks/Work/Amazon reviews/test'
+
 > 'My Drive/Colab Notebooks/Work/bwe/'
+
 >> 'My Drive/Colab Notebooks/Work/bwe/vectors'
 
 Next run the LAN_v3.ipynb and wait!!
