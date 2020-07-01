@@ -26,6 +26,7 @@ EA takes the arithmetic mean of the word vectors as input, F passes it through s
 
 To run the program on Colab: 
 
+Copy the Work folder to the Google Drive.
 The directory should be: 'My Drive/Colab Notebooks/Work/'
 
 In that two directories get created after running extract_data.ipynb:
