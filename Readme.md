@@ -30,13 +30,13 @@ The directory should be: 'My Drive/Colab Notebooks/Work/'
 
 In that two directories get created after running extract_data.ipynb:
 
-> 'My Drive/Colab Notebooks/Work/Amazon reviews/'
->> 'My Drive/Colab Notebooks/Work/Amazon reviews/train'
->> 'My Drive/Colab Notebooks/Work/Amazon reviews/dev'
->> 'My Drive/Colab Notebooks/Work/Amazon reviews/test'
+> - 'My Drive/Colab Notebooks/Work/Amazon reviews/'
+>> - 'My Drive/Colab Notebooks/Work/Amazon reviews/train'
+>> - 'My Drive/Colab Notebooks/Work/Amazon reviews/dev'
+>> - 'My Drive/Colab Notebooks/Work/Amazon reviews/test'
 
-> 'My Drive/Colab Notebooks/Work/bwe/'
->> 'My Drive/Colab Notebooks/Work/bwe/vectors'
+> - 'My Drive/Colab Notebooks/Work/bwe/'
+>> - 'My Drive/Colab Notebooks/Work/bwe/vectors'
 
 
 #### References : [Language-Adversarial Training for Cross-Lingual Text Classification (TACL)](https://github.com/ccsasuke/adan "Source Code on github")
