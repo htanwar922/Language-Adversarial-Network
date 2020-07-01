@@ -2,7 +2,7 @@
 
 ## Language Adverserial Network for Cross-Lingual Text Classification
 
-#### Source code: [Language-Adversarial Training for Cross-Lingual Text Classification (TACL)](https://github.com/ccsasuke/adan "Source code on Github")
+#### Source code: [Language-Adversarial Training](https://github.com/htanwar922/Language-Adverserial-Network "Source code on Github")
 
 ## Introduction
 
@@ -39,3 +39,6 @@ In that two directories get created after running extract_data.ipynb:
 
 -> 'My Drive/Colab Notebooks/Work/bwe/'
 >> 'My Drive/Colab Notebooks/Work/bwe/vectors'
+
+
+#### References : [Language-Adversarial Training for Cross-Lingual Text Classification (TACL)](https://github.com/ccsasuke/adan "Source Code on github")
