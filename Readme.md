@@ -2,7 +2,7 @@
 
 ## Language Adverserial Network for Cross-Lingual Text Classification
 
-#### Source code: [Language-Adversarial Training](https://github.com/htanwar922/Language-Adverserial-Network "Source code on Github")
+#### Source code: [Language-Adversarial Training](https://github.com/htanwar922/Language-Adversarial-Network "Source code on Github")
 
 ## Introduction
 
