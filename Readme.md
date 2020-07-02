@@ -12,7 +12,8 @@ In this project, we present our language-adversarial training approach in the co
 
 We classify a product review into five categories corresponding to its star rating. 
 
-<a href="https://camo.githubusercontent.com/4d97fa1a94cef8a74c708fba238c65a4b30db47e/687474703a2f2f7777772e63732e636f726e656c6c2e6564752f7e786c6368656e2f6173736574732f696d616765732f6164616e2e706e67"><img src="https://camo.githubusercontent.com/4d97fa1a94cef8a74c708fba238c65a4b30db47e/687474703a2f2f7777772e63732e636f726e656c6c2e6564752f7e786c6368656e2f6173736574732f696d616765732f6164616e2e706e67" width="250" height="400"> </a>
+<a href="https://user-images.githubusercontent.com/33962145/86307612-cfde6000-bc34-11ea-9472-c43f4565df1a.png"><img src="https://user-images.githubusercontent.com/33962145/86307612-cfde6000-bc34-11ea-9472-c43f4565df1a.png" width="250" height="400"></a>
+
 
 LAN has two branches. There are four main components in the network: 
 - Embedding averager __EA__ that maps input sequence x to embeddings and gives an averaging of the embeddigs of the sequence.
