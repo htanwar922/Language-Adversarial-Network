@@ -41,4 +41,20 @@ In that two directories get created after running extract_data.ipynb:
 >> - 'My Drive/Colab Notebooks/Work/bwe/vectors'
 
 
-#### References : [Language-Adversarial Training for Cross-Lingual Text Classification (TACL)](https://github.com/ccsasuke/adan "Source Code on github")
+#### References :
+[Language-Adversarial Training for Cross-Lingual Text Classification (TACL)](https://github.com/ccsasuke/adan "Source Code on github")<br>
+[**Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification**](https://arxiv.org/abs/1606.01614)<br>
+[Xilun Chen](http://www.cs.cornell.edu/~xlchen/),
+Yu Sun,
+[Ben Athiwaratkun](http://www.benathiwaratkun.com/),
+[Claire Cardie](http://www.cs.cornell.edu/home/cardie/),
+[Kilian Weinberger](http://kilian.cs.cornell.edu/)
+<br>
+Transactions of the Association for Computational Linguistics (TACL)
+<br>
+[paper (arXiv)](https://arxiv.org/abs/1606.01614),
+[bibtex (arXiv)](http://www.cs.cornell.edu/~xlchen/resources/bibtex/adan.bib),
+[paper (TACL)](https://www.mitpressjournals.org/doi/abs/10.1162/tacl_a_00039),
+[bibtex](http://www.cs.cornell.edu/~xlchen/resources/bibtex/adan_tacl.bib),
+[talk@EMNLP2018](https://vimeo.com/306129914)
+
