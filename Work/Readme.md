@@ -86,7 +86,7 @@ The training was divided in 2 major parts:
 The embedding layer weights (or weights of EA model) are kept untrainable or constant for this, so that only the F, P and Q weights get updated.
 1. The EAFP or sentiment classifier branch is trained on source language reviews data, thus updating F and P model weights.
 2. The EAFQ or language detetor branch is trained on source and target data, updating F and Q models.
-#### > With trainable embeddings
+### > With trainable embeddings
 The embedding layer weights are also made trainable, so that weights of EA are also updated during training.
 1. The EAFP or sentiment classifier branch is trained on source language reviews data, thus updating EA, F and P model weights.
 2. The EAFQ or language detetor branch is trained on source and target data, updating EA, F and Q models.
