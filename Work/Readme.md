@@ -55,3 +55,42 @@ In extract_data.ipynb, you can select which language datas and word-embeddings t
 1. This model is for the adversarial training. It has been assumed that the model can't be trained on target language due to lack of labeled target reviews data. Thus the features of target language are learned through this model. Therefore, training of this branch of LAN updates the already trained feature extractor weights to adjust for target language features.
 2. The inputs are same as sentiment classifier, i.e., the features extracted through feature extractor. The outputs are binary labels with +1 representing source and -1 representing target language data, from the output of a tanh layer.
 3. The loss is evaluated as Hinge loss.
+
+
+# Running the notebook
+The notebook has been divided in several subsections, so that it can be easily converted for local machine running as well.
+
+## Mounting of google drive:
+(Only while running the notebook through drive)
+
+## Options:
+Options here refers to the CLI arguments that are passed through sys.argv variable in python. Since The execution through notebook doesn't include CLI arguments, the sys.argv list needs to be explicitly updated.
+This section also creates necessary folders if they're not already existing.
+
+## Utils:
+Some common use and debugging functions are defined here.
+
+## Data:
+The Amazon Reviews class definition which reads the downloaded data from the datapath mentioned in Options section.
+
+## Layers:
+This section defines the Averaging layer in this version.
+
+## Models:
+This section creates the models which are described above, with their inputs and outputs, and their combinations for training.
+The fundamental are names as EA, F, P and Q respectively. These are combined to produce models named EAF, EAFP, EAFQ and EAFPQ/LAN models.
+
+## Training:
+The training was divided in 2 major parts:
+### > Without trainable embeddings
+The embedding layer weights (or weights of EA model) are kept untrainable or constant for this, so that only the F, P and Q weights get updated.
+1. The EAFP or sentiment classifier branch is trained on source language reviews data, thus updating F and P model weights.
+2. The EAFQ or language detetor branch is trained on source and target data, updating F and Q models.
+#### > With trainable embeddings
+The embedding layer weights are also made trainable, so that weights of EA are also updated during training.
+1. The EAFP or sentiment classifier branch is trained on source language reviews data, thus updating EA, F and P model weights.
+2. The EAFQ or language detetor branch is trained on source and target data, updating EA, F and Q models.
+3. The overall LAN is trained, updating weights of EA, F, P as well as Q at the same time. For this, the labels need to be zipped with the language-labels and shuffled so that loss can include both Sparse Categorical Crossentropy loss for sentiment classification, as well as Hinge loss for language detection.
+
+## Evaluation:
+The model is evaluated on (unseen) target data.
