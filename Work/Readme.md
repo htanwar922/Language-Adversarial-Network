@@ -94,3 +94,16 @@ The embedding layer weights are also made trainable, so that weights of EA are a
 
 ## Evaluation:
 The model is evaluated on (unseen) target data.
+
+## Saving and Reloading of at different checkpoints:
+The model may need to be saved and reloaded at many places to cater to unexplained crashes while running.
+### Saving:
+Saving LAN will save all the models in a common model (just like usual saves as in TF documentation).
+### Loading:
+1. Load the model as single LAN model.
+2. Look at LAN structure with LAN.summary() function.
+3. The summary should show three sequential models in the bottom. These are F, P and Q (in top-to-bottom order in v3 implementation).
+4. These layers and models can be accessed with LAN.layers and stored in (_, E, _, A, F, P, Q) in this order.
+5. There would be two inputs for padded review sequences and corresponding actual lengths. These have to be used for inputting to the other complex models, i.e., EA, EAF, EAFP, EAFQ. The inputs can be accessed with LAN.inputs and stored in (input1, input2).
+
+The Utils section in v5 has these two functions implemented as load_models and save_models.
