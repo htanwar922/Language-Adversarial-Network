@@ -40,6 +40,7 @@ In that two directories get created after running extract_data.ipynb:
 > - 'My Drive/Colab Notebooks/Work/bwe/'
 >> - 'My Drive/Colab Notebooks/Work/bwe/vectors'
 
+More detailed descriptions of running instructions can be found in folders in the repositories.
 
 #### References :
 [Language-Adversarial Training for Cross-Lingual Text Classification (TACL)](https://github.com/ccsasuke/adan "Source Code on github")<br>
