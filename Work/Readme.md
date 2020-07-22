@@ -68,7 +68,7 @@ Options here refers to the CLI arguments that are passed through sys.argv variab
 This section also creates necessary folders if they're not already existing.
 
 ## Utils:
-Some common use and debugging functions are defined here.
+Some common use and debugging functions are defined here. In higher versions, the saving and loading of models is also defined, which is needed to create checkpoints, as the all the models can't be directly saved and imported; LAN as a whole is saved and loaded and the component models have to be reconfigured from the same only. (This is also another reason for division of feature extractor in two parts).
 
 ## Data:
 The Amazon Reviews class definition which reads the downloaded data from the datapath mentioned in Options section.
