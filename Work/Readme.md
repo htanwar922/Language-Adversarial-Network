@@ -1,4 +1,4 @@
-#### Note: For abstract model description, please refer parent directory.
+#### Note: For [abstract model description](https://github.com/htanwar922/Language-Adversarial-Network/tree/master/Work), please refer parent directory.
 
 Download (Upload) the files to Google Drive folder Colab Notebooks:
 
