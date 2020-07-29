@@ -1,3 +1,5 @@
+#### Note:
+For abstract model description, please refer parent directory.
 
 Download (Upload) the files to Google Drive folder Colab Notebooks:
 
