@@ -96,7 +96,7 @@ The embedding layer weights are also made trainable, so that weights of EA are a
 ## Evaluation:
 The model is evaluated on (unseen) target data.
 
-## Saving and Reloading of at different checkpoints:
+## Saving and Reloading of model at different checkpoints:
 The model may need to be saved and reloaded at many places to cater to unexplained crashes while running.
 ### Saving:
 Saving LAN will save all the models in a common model (just like usual saves as in TF documentation).
