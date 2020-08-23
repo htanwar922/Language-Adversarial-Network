@@ -57,7 +57,7 @@ parser.add_argument('--pre_trained_src_emb_file', type=str, default='bwe/vectors
 parser.add_argument('--pre_trained_tgt_emb_file', type=str, default='bwe/vectors/wiki.multi.fr.vec')
 
 # Feature Extractor
-parser.add_argument('--model', default='lstm')                        # dan or lstm or cnn
+parser.add_argument('--model', default='dan')                        # dan or lstm
 parser.add_argument('--fix_emb', action='store_true')
 parser.add_argument('--vector_length', type=int, default=1)
 # for LSTM model

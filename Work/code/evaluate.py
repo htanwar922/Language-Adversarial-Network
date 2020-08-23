@@ -19,6 +19,7 @@ from data import *
 from utils import *
 from layers import *
 from models import *
+from train_data import *
 
 # Save/Load model and weights
 E, A, F, P, Q, EA, EAF, EAFP, EAFQ, LAN = load_models(current_ckpt, __version__=opt.__version__)

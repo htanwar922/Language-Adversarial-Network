@@ -65,7 +65,7 @@ if opt.last_ckpt == current_ckpt:
     opt.F_activation = 'relu'   # absexp_1
     opt.P_activation = 'relu'
     opt.Q_activation = 'relu'
-    opt.model = 'lstm' #'dan'
+    #opt.model = 'dan' #'lstm'
     opt.lstm_hidden = 256
 
     num_layers, hidden_size, dropout, batch_norm, activation = opt.F_layers, opt.hidden_size, opt.dropout, opt.F_bn, opt.F_activation

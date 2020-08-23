@@ -19,6 +19,7 @@ from data import *
 from utils import *
 from layers import *
 from models import *
+from train_data import *
 
 """## IF CRASHED previously:
 <br> <i>Run till here and jump to next MARKUP Checkpoint</i>
