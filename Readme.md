@@ -156,5 +156,4 @@ The Utils section in v5 has these two functions implemented as load_models and s
 ___More detailed descriptions of running instructions can be found in folders in the repository.___
 <br></br>
 #### References :
-[Language-Adversarial Training for Cross-Lingual Text Classification (TACL)](https://github.com/ccsasuke/adan "Source Code on github")<br>
 [**Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification**](https://arxiv.org/abs/1606.01614)<br>
