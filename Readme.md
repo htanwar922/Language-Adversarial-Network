@@ -99,6 +99,7 @@ To evaluate, run evaluate.py file.
 1. This model is for the adversarial training. It has been assumed that the model can't be trained on target language due to lack of labeled target reviews data. Thus the features of target language are learned through this model. Therefore, training of this branch of LAN updates the already trained feature extractor weights to adjust for target language features.
 2. The inputs are same as sentiment classifier, i.e., the features extracted through feature extractor. The outputs are binary labels with +1 representing source and -1 representing target language data, from the output of a tanh layer.
 3. The loss is evaluated as Hinge loss.
+4. During training of this branch, the gradients learnt are reversed (multiplied by -lambda) before updating the model weights. This is done so that the features learnt are invariant-features between the source an target language.
 
 
 # Running the notebook
@@ -126,11 +127,11 @@ The fundamental are names as EA, F, P and Q respectively. These are combined to 
 
 ## Training:
 The training was divided in 2 major parts:
-### > Without trainable embeddings
+### Without trainable embeddings
 The embedding layer weights (or weights of EA model) are kept untrainable or constant for this, so that only the F, P and Q weights get updated.
 1. The EAFP or sentiment classifier branch is trained on source language reviews data, thus updating F and P model weights.
 2. The EAFQ or language detetor branch is trained on source and target data, updating F and Q models.
-### > With trainable embeddings
+### With trainable embeddings
 The embedding layer weights are also made trainable, so that weights of EA are also updated during training.
 1. The EAFP or sentiment classifier branch is trained on source language reviews data, thus updating EA, F and P model weights.
 2. The EAFQ or language detetor branch is trained on source and target data, updating EA, F and Q models.
