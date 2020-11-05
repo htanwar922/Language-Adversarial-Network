@@ -24,7 +24,6 @@ LAN has two branches. There are four main components in the network:
 We adopt the __Deep Averaging Network (DAN)__ for the (EA + F). DAN takes the arithmetic mean of the word vectors as input, and passes it through several fully-connected layers until a softmax for classification.
 
 EA takes the arithmetic mean of the word vectors as input, F passes it through several fully-connected layers until a softmax for classification in Semantic Classifier (P). In LAN, EA first calculates the average of the word vectors in the input sequence, then passes the average through a feed-forward network with ReLU nonlinearities. The activations of the last layer in F are considered the extracted features for the input and are then passed on to P and Q. The sentiment classifier P and the language discriminator Q are standard feed-forward networks. P has a softmax layer on top for text classification and Q ends with a tanh layer of output width 1 to assign a language identification score (-1 for target and 1 for source).
-#### Note: For [abstract model description](https://github.com/htanwar922/Language-Adversarial-Network), please refer parent directory.
 
 ## Setup
 ### For Colaboratory:
@@ -58,8 +57,8 @@ In extract_data.ipynb, you can select which language datas and word-embeddings t
 ### For local files:
 #### Dependencies:
 <ul>
-  <li>Python 3</li>
-  <li>Tensorflow 2</li>
+  <li>Python 3.7</li>
+  <li>Tensorflow 2.3.0</li>
   <li>Numpy</li>
   <li>Regex</li>
   <li>Requests</li>
